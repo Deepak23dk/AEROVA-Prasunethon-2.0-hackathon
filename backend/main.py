@@ -30,8 +30,12 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 # Configure CORS for local development and production URLs
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify Vercel domains. Using * for hackathon flexibility.
-    allow_credentials=False,
+    allow_origins=[
+        "https://aerova-eight.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173"
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

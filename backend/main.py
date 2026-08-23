@@ -56,6 +56,16 @@ async def api_key_middleware(request: Request, call_next):
     
     return await call_next(request)
 
+@app.get("/")
+def read_root():
+    return {
+        "status": "online",
+        "system": "Aerova (FAXAQ) Research API",
+        "version": "1.0.0",
+        "documentation": "/docs",
+        "hackathon": "Prasunethon 2.0"
+    }
+
 # Endpoints
 @app.get("/api/forecast/{zone}", response_model=ForecastResponse)
 @limiter.limit("60/minute")

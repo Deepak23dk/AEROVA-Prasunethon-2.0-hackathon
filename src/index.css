@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-aerova-blue: #1C7293;
+  --color-aerova-teal: #0EA5A5;
+  --color-aerova-orange: #F2994A;
+  --color-aerova-red: #EF4444;
+  --color-aerova-green: #22C55E;
+  --color-aerova-purple: #8B5CF6;
+  --color-aerova-ice: #CADCFC;
+  --color-aerova-lavender: #E9E4FF;
+  --color-aerova-navy-800: #0F172A;
+  --color-aerova-navy-900: #020617;
+  --color-aerova-navy-950: #0B0F19;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Poppins', 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900 transition-colors duration-300;
+  }
+  
+  body.dark {
+    @apply bg-aerova-navy-950 text-slate-100;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full dark:bg-slate-700;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
+
+/* Glowing animations for premium look */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(14, 165, 165, 0.4);
+    border-color: rgba(14, 165, 165, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(14, 165, 165, 0.8);
+    border-color: rgba(14, 165, 165, 1);
+  }
+}
+
+@keyframes pulseGlowRed {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+    border-color: rgba(239, 68, 68, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+    border-color: rgba(239, 68, 68, 1);
+  }
+}
+
+.pulse-glow-monitor {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.pulse-glow-red {
+  animation: pulseGlowRed 1.5s infinite ease-in-out;
+}

@@ -1,0 +1,5 @@
+Aerova (FAXAQ) Hackathon Submission Links
+
+Live Web Dashboard: https://aerova-prasunethon-2-0-hackathon.vercel.app
+Production REST API: https://aerova-prasunethon-2-0-hackathon1.onrender.com
+GitHub Repository: https://github.com/Deepak23dk/AEROVA-Prasunethon-2.0-hackathon

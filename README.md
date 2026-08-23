@@ -1,7 +1,7 @@
 # Aerova (FAXAQ) - Autonomous Environmental Risk Calibration
 
 ### 🚀 Live Deployment Links
-*   **Live Web Dashboard**: [https://aerova-eight.vercel.app](https://aerova-eight.vercel.app)
+*   **Live Web Dashboard**: [https://aerova-prasunethon-2-0-hackathon.vercel.app](https://aerova-prasunethon-2-0-hackathon.vercel.app)
 *   **Production REST API**: [https://aerova-prasunethon-2-0-hackathon1.onrender.com](https://aerova-prasunethon-2-0-hackathon1.onrender.com)
 
 ---

@@ -1,5 +1,11 @@
 # Aerova (FAXAQ) - Autonomous Environmental Risk Calibration
 
+### 🚀 Live Deployment Links
+*   **Live Web Dashboard**: [https://aerova-eight.vercel.app](https://aerova-eight.vercel.app)
+*   **Production REST API**: [https://aerova-prasunethon-2-0-hackathon1.onrender.com](https://aerova-prasunethon-2-0-hackathon1.onrender.com)
+
+---
+
 Aerova is a premium full-stack web application designed and validated for **Prasunethon 2.0 Round 2**. It demonstrates an autonomous, self-healing federated learning pipeline designed to monitor and mitigate environmental model data drift (non-stationarity) in smart city grids.
 
 ---

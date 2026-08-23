@@ -31,6 +31,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://aerova-prasunethon-2-0-hackathon.vercel.app",
         "https://aerova-eight.vercel.app",
         "http://localhost:5173",
         "http://127.0.0.1:5173"
